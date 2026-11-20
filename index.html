@@ -124,7 +124,9 @@ html {
     padding: 128px 0 84px;
     position: relative;
     overflow: hidden;
-    background: linear-gradient(165deg, var(--blue-dark), var(--blue-deep) 55%, var(--blue));
+    background:
+  linear-gradient(to bottom, var(--blue-dark) 0, rgba(43,53,66,0) 180px),
+  linear-gradient(165deg, var(--blue-dark), var(--blue-deep) 55%, var(--blue));
     --ink: var(--dark-ink);
     --ink-soft: var(--dark-ink-soft);
     --line: var(--dark-line);
@@ -140,7 +142,7 @@ html {
   }
   .hero::before{
     width: 480px; height: 480px;
-    top: -160px; right: -120px;
+    top: 40px; right: -120px;
     background: radial-gradient(circle, var(--steel-deep), transparent 70%);
     opacity: 0.26;
     animation: floatA 14s ease-in-out infinite;
