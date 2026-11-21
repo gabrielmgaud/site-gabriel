@@ -310,8 +310,8 @@ html {
     header.scrolled .brand{ max-width: 0; opacity: 0; margin-right: -10px; pointer-events: none; }
     header.scrolled .nav-links{
       max-width: 100%; opacity: 1; pointer-events: auto; overflow-x: auto;
-      -webkit-mask-image: linear-gradient(90deg, transparent, #000 var(--fl, 0px), #000 calc(100% - var(--fr, 44px)), transparent);
-mask-image: linear-gradient(90deg, transparent, #000 var(--fl, 0px), #000 calc(100% - var(--fr, 44px)), transparent);
+      -webkit-mask-image: linear-gradient(90deg, transparent, #000 var(--fl, 0px), #000 calc(100% - var(--fr, 72px)), transparent);
+mask-image: linear-gradient(90deg, transparent, #000 var(--fl, 0px), #000 calc(100% - var(--fr, 72px)), transparent);
     }
     .nav-cta{ padding: 11px 18px; }
   }
@@ -623,7 +623,7 @@ mask-image: linear-gradient(90deg, transparent, #000 var(--fl, 0px), #000 calc(1
   function fade(){
     var max = nl.scrollWidth - nl.clientWidth;
     nl.style.setProperty('--fl', nl.scrollLeft > 4 ? '28px' : '0px');
-    nl.style.setProperty('--fr', (max - nl.scrollLeft > 4) ? '44px' : '0px');
+    nl.style.setProperty('--fr', (max - nl.scrollLeft > 4) ? '72px' : '0px');
   }
   nl.addEventListener('scroll', fade, {passive:true});
   nl.addEventListener('transitionend', fade);
